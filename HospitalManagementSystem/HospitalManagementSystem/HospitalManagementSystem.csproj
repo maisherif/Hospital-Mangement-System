@@ -52,12 +52,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOptions.Designer.cs">
+      <DependentUpon>AdminOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cryptography.cs" />
+    <Compile Include="Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorForm.Designer.cs">
+      <DependentUpon>doctorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Medicine.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Medicine.Designer.cs">
       <DependentUpon>Form_Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_doctorSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_doctorSchedule.Designer.cs">
+      <DependentUpon>frm_doctorSchedule.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
@@ -71,16 +95,52 @@
     <Compile Include="frm_register.Designer.cs">
       <DependentUpon>frm_register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurse.Designer.cs">
+      <DependentUpon>Nurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminOptions.resx">
+      <DependentUpon>AdminOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorForm.resx">
+      <DependentUpon>doctorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Medicine.resx">
       <DependentUpon>Form_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_doctorSchedule.resx">
+      <DependentUpon>frm_doctorSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_register.resx">
       <DependentUpon>frm_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurse.resx">
+      <DependentUpon>Nurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +150,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hims-bg-top.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hospital-Management-System-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
